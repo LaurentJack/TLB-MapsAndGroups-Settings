@@ -157,6 +157,7 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 | `RaidWindows[].Start` | `"18:00"` | Heure de début "HH:MM" |
 | `RaidWindows[].End` | `"23:00"` | Heure de fin "HH:MM" (plus tôt que le début = finit le lendemain ; égale au début = toute la journée) |
 | `MapBuildingsEnabled` | `1` | 1 = icônes des bâtiments (puits, commissariats...) sur la carte des joueurs |
+| `MapRoadsEnabled` | `1` | 1 = routes tracées par-dessus la carte satellite (trouvées en même temps que les bâtiments) |
 | `MapBuildings` | _liste_ | Types de bâtiments affichés sur la carte. Le serveur les cherche au premier démarrage et garde le résultat dans MapBuildings_<carte>.json (recherche refaite si cette liste change) |
 | `MapBuildings[].Enabled` | `1` | 1 = type affiché |
 | `MapBuildings[].Name` | `"Water well"` | Nom du type (pour vous y retrouver) |
@@ -311,6 +312,7 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 | `ShowSatellite` | `1` | 1 = carte satellite ; 0 = carte vanilla |
 | `ShowZoneIndicator` | `1` | 1 = affiche l'indicateur PvE / PvP en haut de l'écran |
 | `ShowMapBuildings` | `1` | 1 = icônes des bâtiments (puits, commissariats...) sur la carte satellite |
+| `ShowMapRoads` | `1` | 1 = routes tracées sur la carte satellite |
 | `PlayerListStyle` | `0` | Style de la liste d'équipe : 0 normal, 1 compact |
 | `GPSSize` | `1` | Taille du GPS : 0 petit, 1 normal, 2 grand |
 | `GPSZoom` | `0.15` | Zoom du GPS (petit = proche) |
