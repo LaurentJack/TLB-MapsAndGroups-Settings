@@ -1,6 +1,6 @@
 # TLB Maps And Groups : réglages
 
-[English version](README_EN.md)
+[English version](SETTINGS_EN.md)
 
 Ce document décrit tous les réglages du mod **TLB Maps And Groups** pour DayZ.
 
@@ -130,6 +130,7 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 | `PvEProtectBases` | `1` | 1 = les joueurs ne peuvent pas abîmer les constructions en zone PvE |
 | `PvEBlockRestrain` | `1` | 1 = impossible de menotter un joueur en zone PvE |
 | `ForceFirstPersonInPvP` | `0` | 1 = vue 1re personne obligatoire dans les zones PvP (la 3e personne revient en sortant) |
+| `UnlimitedStamina` | `0` | Stamina illimitee : 0 = non (vanilla), 1 = partout, 2 = seulement en zone PvE |
 | `PvEBlockedDamageSources` | `Grenade_Base`, `ExplosivesBase`, `ClaymoreMine`, `LandMineTrap`, `TrapBase` | Explosifs et pièges dont les dégâts sont aussi bloqués en PvE (l'auteur est inconnu) |
 | `TerritoryEnabled` | `1` | 1 = active les règles de territoire autour des drapeaux |
 | `TerritoryRadius` | `60.0` | Rayon du territoire autour d'un drapeau, en mètres |
