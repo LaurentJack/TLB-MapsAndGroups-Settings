@@ -39,7 +39,7 @@ default values below, then rewritten on every start to add new settings.
 
 | Setting | Default | Explanation |
 |---|---|---|
-| `ConfigVersion` | `4` | File format version, managed by the mod: do not edit |
+| `ConfigVersion` | `6` | File format version, managed by the mod: do not edit |
 | `ConfigCommentsLanguage` | `"auto"` | Language of these comments: "fr", "en", "auto" (server language) or "" (no comments) |
 | `GroupNameMinLength` | `3` | Minimum number of characters in a group name |
 | `GroupNameMaxLength` | `24` | Maximum number of characters in a group name |
@@ -156,6 +156,13 @@ default values below, then rewritten on every start to add new settings.
 | `RaidWindows[].Days` | `5`, `6`, `7` | Days of the slot: 1 = Monday, 2 = Tuesday ... 7 = Sunday |
 | `RaidWindows[].Start` | `"18:00"` | Start time "HH:MM" |
 | `RaidWindows[].End` | `"23:00"` | End time "HH:MM" (earlier than the start = ends the next day; same as the start = whole day) |
+| `MapBuildingsEnabled` | `1` | 1 = building icons (wells, police stations...) on the players' map |
+| `MapBuildings` | _list_ | Building types shown on the map. The server finds them on first start and keeps the result in MapBuildings_<map>.json (searched again if this list changes) |
+| `MapBuildings[].Enabled` | `1` | 1 = type shown |
+| `MapBuildings[].Name` | `"Water well"` | Type name (for your reference) |
+| `MapBuildings[].Icon` | `"map_fountain"` | Icon (see the list in the README) |
+| `MapBuildings[].Color` | `-11549705` (#FF4FC3F7) | Icon color |
+| `MapBuildings[].Classes` | `Land_Misc_Well_Pump_Yellow`, `Land_Misc_Well_Pump_Blue` | Building classes (inherited classes count too) |
 | `DeathMarkerMinutes` | `60` | Private marker placed where the player died, for X minutes (0 = off) |
 
 ### Permissions
@@ -303,6 +310,7 @@ default values below, then rewritten on every start to add new settings.
 | `ShowNoBuildZones` | `1` | 1 = show zones on the map |
 | `ShowSatellite` | `1` | 1 = satellite map; 0 = vanilla map |
 | `ShowZoneIndicator` | `1` | 1 = show the PvE / PvP indicator at the top of the screen |
+| `ShowMapBuildings` | `1` |  |
 | `PlayerListStyle` | `0` | Team list style: 0 normal, 1 compact |
 | `GPSSize` | `1` | GPS size: 0 small, 1 normal, 2 large |
 | `GPSZoom` | `0.15` | GPS zoom (small = close) |

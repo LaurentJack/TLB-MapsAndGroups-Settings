@@ -39,7 +39,7 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 
 | Réglage | Par défaut | Explication |
 |---|---|---|
-| `ConfigVersion` | `4` | Version du format de ce fichier, gérée par le mod : ne pas modifier |
+| `ConfigVersion` | `6` | Version du format de ce fichier, gérée par le mod : ne pas modifier |
 | `ConfigCommentsLanguage` | `"auto"` | Langue de ces commentaires : "fr", "en", "auto" (langue du serveur) ou "" (aucun commentaire) |
 | `GroupNameMinLength` | `3` | Nombre minimum de caractères du nom de groupe |
 | `GroupNameMaxLength` | `24` | Nombre maximum de caractères du nom de groupe |
@@ -156,6 +156,13 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 | `RaidWindows[].Days` | `5`, `6`, `7` | Jours du créneau : 1 = lundi, 2 = mardi ... 7 = dimanche |
 | `RaidWindows[].Start` | `"18:00"` | Heure de début "HH:MM" |
 | `RaidWindows[].End` | `"23:00"` | Heure de fin "HH:MM" (plus tôt que le début = finit le lendemain ; égale au début = toute la journée) |
+| `MapBuildingsEnabled` | `1` | 1 = icônes des bâtiments (puits, commissariats...) sur la carte des joueurs |
+| `MapBuildings` | _liste_ | Types de bâtiments affichés sur la carte. Le serveur les cherche au premier démarrage et garde le résultat dans MapBuildings_<carte>.json (recherche refaite si cette liste change) |
+| `MapBuildings[].Enabled` | `1` | 1 = type affiché |
+| `MapBuildings[].Name` | `"Water well"` | Nom du type (pour vous y retrouver) |
+| `MapBuildings[].Icon` | `"map_fountain"` | Icône (voir la liste dans le README) |
+| `MapBuildings[].Color` | `-11549705` (#FF4FC3F7) | Couleur de l'icône |
+| `MapBuildings[].Classes` | `Land_Misc_Well_Pump_Yellow`, `Land_Misc_Well_Pump_Blue` | Classes des bâtiments (les classes héritées comptent aussi) |
 | `DeathMarkerMinutes` | `60` | Marqueur privé posé à l'endroit de la mort du joueur, pendant X minutes (0 = désactivé) |
 
 ### Permissions
@@ -303,6 +310,7 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 | `ShowNoBuildZones` | `1` | 1 = affiche les zones sur la carte |
 | `ShowSatellite` | `1` | 1 = carte satellite ; 0 = carte vanilla |
 | `ShowZoneIndicator` | `1` | 1 = affiche l'indicateur PvE / PvP en haut de l'écran |
+| `ShowMapBuildings` | `1` |  |
 | `PlayerListStyle` | `0` | Style de la liste d'équipe : 0 normal, 1 compact |
 | `GPSSize` | `1` | Taille du GPS : 0 petit, 1 normal, 2 grand |
 | `GPSZoom` | `0.15` | Zoom du GPS (petit = proche) |
