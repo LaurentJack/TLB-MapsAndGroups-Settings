@@ -39,7 +39,7 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 
 | Réglage | Par défaut | Explication |
 |---|---|---|
-| `ConfigVersion` | `3` | Version du format de ce fichier, gérée par le mod : ne pas modifier |
+| `ConfigVersion` | `4` | Version du format de ce fichier, gérée par le mod : ne pas modifier |
 | `ConfigCommentsLanguage` | `"auto"` | Langue de ces commentaires : "fr", "en", "auto" (langue du serveur) ou "" (aucun commentaire) |
 | `GroupNameMinLength` | `3` | Nombre minimum de caractères du nom de groupe |
 | `GroupNameMaxLength` | `24` | Nombre maximum de caractères du nom de groupe |
@@ -149,6 +149,14 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 | `MaxFlagsPerGroup` | `1` | Nombre maximum de drapeaux par groupe (0 = illimité) |
 | `BuildExceptions` | `Plastic_Explosive`, `ClaymoreMine`, `LandMineTrap`, `ImprovisedExplosive` | Objets toujours autorisés, même en territoire ennemi (explosifs...) |
 | `RestrictedItems` | `KitBase`, `TentBase`, `CodeLock`, `CombinationLock` | Objets soumis aux règles de territoire et de zones interdites (héritiers compris) |
+| `RaidHoursEnabled` | `0` | 1 = horaires de raid : hors des créneaux de RaidWindows, les bases ne prennent aucun dégât et seuls les membres du groupe du drapeau peuvent détruire une pièce ou composer un cadenas |
+| `RaidAnnounce` | `1` | 1 = message dans le chat quand les raids commencent et se terminent |
+| `RaidProtectedItems` | `TentBase`, `CombinationLock` | Objets protégés hors des horaires de raid, en plus des constructions (héritiers compris) |
+| `RaidWindows` | _liste_ | Créneaux où les raids sont permis, à l'heure locale du serveur |
+| `RaidWindows[].Days` | `5`, `6`, `7` | Jours du créneau : 1 = lundi, 2 = mardi ... 7 = dimanche |
+| `RaidWindows[].Start` | `"18:00"` | Heure de début "HH:MM" |
+| `RaidWindows[].End` | `"23:00"` | Heure de fin "HH:MM" (plus tôt que le début = finit le lendemain ; égale au début = toute la journée) |
+| `DeathMarkerMinutes` | `60` | Marqueur privé posé à l'endroit de la mort du joueur, pendant X minutes (0 = désactivé) |
 
 ### Permissions
 

@@ -39,7 +39,7 @@ default values below, then rewritten on every start to add new settings.
 
 | Setting | Default | Explanation |
 |---|---|---|
-| `ConfigVersion` | `3` | File format version, managed by the mod: do not edit |
+| `ConfigVersion` | `4` | File format version, managed by the mod: do not edit |
 | `ConfigCommentsLanguage` | `"auto"` | Language of these comments: "fr", "en", "auto" (server language) or "" (no comments) |
 | `GroupNameMinLength` | `3` | Minimum number of characters in a group name |
 | `GroupNameMaxLength` | `24` | Maximum number of characters in a group name |
@@ -149,6 +149,14 @@ default values below, then rewritten on every start to add new settings.
 | `MaxFlagsPerGroup` | `1` | Maximum number of flags per group (0 = unlimited) |
 | `BuildExceptions` | `Plastic_Explosive`, `ClaymoreMine`, `LandMineTrap`, `ImprovisedExplosive` | Items always allowed, even on enemy territory (explosives...) |
 | `RestrictedItems` | `KitBase`, `TentBase`, `CodeLock`, `CombinationLock` | Items subject to territory and no build rules (inherited classes included) |
+| `RaidHoursEnabled` | `0` | 1 = raid hours: outside the RaidWindows slots, bases take no damage and only members of the flag's group can destroy a part or dial a lock |
+| `RaidAnnounce` | `1` | 1 = chat message when raid time starts and ends |
+| `RaidProtectedItems` | `TentBase`, `CombinationLock` | Items protected outside raid hours, on top of base building (inherited classes too) |
+| `RaidWindows` | _list_ | Time slots when raids are allowed, in the server's local time |
+| `RaidWindows[].Days` | `5`, `6`, `7` | Days of the slot: 1 = Monday, 2 = Tuesday ... 7 = Sunday |
+| `RaidWindows[].Start` | `"18:00"` | Start time "HH:MM" |
+| `RaidWindows[].End` | `"23:00"` | End time "HH:MM" (earlier than the start = ends the next day; same as the start = whole day) |
+| `DeathMarkerMinutes` | `60` | Private marker placed where the player died, for X minutes (0 = off) |
 
 ### Permissions
 
