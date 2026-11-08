@@ -310,7 +310,7 @@ default values below, then rewritten on every start to add new settings.
 | `ShowNoBuildZones` | `1` | 1 = show zones on the map |
 | `ShowSatellite` | `1` | 1 = satellite map; 0 = vanilla map |
 | `ShowZoneIndicator` | `1` | 1 = show the PvE / PvP indicator at the top of the screen |
-| `ShowMapBuildings` | `1` |  |
+| `ShowMapBuildings` | `1` | 1 = building icons (wells, police stations...) on the satellite map |
 | `PlayerListStyle` | `0` | Team list style: 0 normal, 1 compact |
 | `GPSSize` | `1` | GPS size: 0 small, 1 normal, 2 large |
 | `GPSZoom` | `0.15` | GPS zoom (small = close) |

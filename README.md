@@ -310,7 +310,7 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 | `ShowNoBuildZones` | `1` | 1 = affiche les zones sur la carte |
 | `ShowSatellite` | `1` | 1 = carte satellite ; 0 = carte vanilla |
 | `ShowZoneIndicator` | `1` | 1 = affiche l'indicateur PvE / PvP en haut de l'écran |
-| `ShowMapBuildings` | `1` |  |
+| `ShowMapBuildings` | `1` | 1 = icônes des bâtiments (puits, commissariats...) sur la carte satellite |
 | `PlayerListStyle` | `0` | Style de la liste d'équipe : 0 normal, 1 compact |
 | `GPSSize` | `1` | Taille du GPS : 0 petit, 1 normal, 2 grand |
 | `GPSZoom` | `0.15` | Zoom du GPS (petit = proche) |
