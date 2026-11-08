@@ -130,6 +130,9 @@ default values below, then rewritten on every start to add new settings.
 | `PvEProtectBases` | `1` | 1 = players cannot damage buildings in PvE zones |
 | `PvEBlockRestrain` | `1` | 1 = players cannot be restrained in PvE zones |
 | `ForceFirstPersonInPvP` | `0` | 1 = first-person view forced in PvP zones (third person comes back when leaving) |
+| `SafeZoneRemoveZombies` | `1` | 1 = infected entering a safe zone are removed |
+| `SafeZoneRemoveAnimals` | `0` | 1 = animals entering a safe zone are removed |
+| `SafeZoneRemoveAI` | `0` | 1 = AI (Expansion AI, AI Patrols...) entering a safe zone are removed; 0 = they stay but deal no damage |
 | `UnlimitedStamina` | `0` | Unlimited stamina: 0 = off (vanilla), 1 = everywhere, 2 = only in PvE zones |
 | `PvEBlockedDamageSources` | `Grenade_Base`, `ExplosivesBase`, `ClaymoreMine`, `LandMineTrap`, `TrapBase` | Explosives and traps whose damage is also blocked in PvE (the owner is unknown) |
 | `TerritoryEnabled` | `1` | 1 = enable territory rules around flags |
@@ -168,7 +171,7 @@ default values below, then rewritten on every start to add new settings.
 | `PvPRules` | `1` | 1 = PvE / PvP zones enabled |
 | `Zones` | _list_ | Drawn zones (easier to edit in game: menu > Zones tab) |
 | `Zones[].Name` | `""` | Zone name (shown on the map) |
-| `Zones[].Type` | `0` | 0 = no build, 1 = PvE, 2 = PvP |
+| `Zones[].Type` | `0` | 0 = no build, 1 = PvE, 2 = PvP, 3 = safe (no damage, zombies removed) |
 | `Zones[].Form` | `0` | 0 = circle, 1 = polygon |
 | `Zones[].Pos` | `0`, `0`, `0` | Zone center [x, height, z] |
 | `Zones[].Radius` | `300` | Radius in meters (circle only) |

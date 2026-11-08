@@ -130,6 +130,9 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 | `PvEProtectBases` | `1` | 1 = les joueurs ne peuvent pas abîmer les constructions en zone PvE |
 | `PvEBlockRestrain` | `1` | 1 = impossible de menotter un joueur en zone PvE |
 | `ForceFirstPersonInPvP` | `0` | 1 = vue 1re personne obligatoire dans les zones PvP (la 3e personne revient en sortant) |
+| `SafeZoneRemoveZombies` | `1` | 1 = les zombies qui entrent dans une zone safe sont supprimés |
+| `SafeZoneRemoveAnimals` | `0` | 1 = les animaux qui entrent dans une zone safe sont supprimés |
+| `SafeZoneRemoveAI` | `0` | 1 = les IA (Expansion AI, AI Patrols...) qui entrent dans une zone safe sont supprimées ; 0 = elles restent mais ne font aucun dégât |
 | `UnlimitedStamina` | `0` | Stamina illimitee : 0 = non (vanilla), 1 = partout, 2 = seulement en zone PvE |
 | `PvEBlockedDamageSources` | `Grenade_Base`, `ExplosivesBase`, `ClaymoreMine`, `LandMineTrap`, `TrapBase` | Explosifs et pièges dont les dégâts sont aussi bloqués en PvE (l'auteur est inconnu) |
 | `TerritoryEnabled` | `1` | 1 = active les règles de territoire autour des drapeaux |
@@ -168,7 +171,7 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 | `PvPRules` | `1` | 1 = zones PvE / PvP actives |
 | `Zones` | _liste_ | Zones tracées (plus simple à éditer en jeu : menu > onglet Zones) |
 | `Zones[].Name` | `""` | Nom de la zone (affiché sur la carte) |
-| `Zones[].Type` | `0` | 0 = construction interdite, 1 = PvE, 2 = PvP |
+| `Zones[].Type` | `0` | 0 = construction interdite, 1 = PvE, 2 = PvP, 3 = safe (aucun dégât, zombies supprimés) |
 | `Zones[].Form` | `0` | 0 = cercle, 1 = polygone |
 | `Zones[].Pos` | `0`, `0`, `0` | Centre de la zone [x, hauteur, z] |
 | `Zones[].Radius` | `300` | Rayon en mètres (cercle seulement) |
