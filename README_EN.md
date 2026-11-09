@@ -133,6 +133,7 @@ default values below, then rewritten on every start to add new settings.
 | `SafeZoneRemoveZombies` | `1` | 1 = infected entering a safe zone are removed |
 | `SafeZoneRemoveAnimals` | `0` | 1 = animals entering a safe zone are removed |
 | `SafeZoneRemoveAI` | `0` | 1 = AI (Expansion AI, AI Patrols...) entering a safe zone are removed; 0 = they stay but deal no damage |
+| `AutorunEnabled` | `1` | 1 = players can use autorun: a key (= by default, can be changed in the controls) makes the character move on its own |
 | `UnlimitedStamina` | `0` | Unlimited stamina: 0 = off (vanilla), 1 = everywhere, 2 = only in PvE zones |
 | `PvEBlockedDamageSources` | `Grenade_Base`, `ExplosivesBase`, `ClaymoreMine`, `LandMineTrap`, `TrapBase` | Explosives and traps whose damage is also blocked in PvE (the owner is unknown) |
 | `TerritoryEnabled` | `1` | 1 = enable territory rules around flags |
@@ -313,6 +314,7 @@ default values below, then rewritten on every start to add new settings.
 | `ShowZoneIndicator` | `1` | 1 = show the PvE / PvP indicator at the top of the screen |
 | `ShowMapBuildings` | `1` | 1 = building icons (wells, police stations...) on the satellite map |
 | `ShowMapRoads` | `1` | 1 = roads drawn on the satellite map |
+| `AutorunSpeed` | `2` | Autorun speed: 1 = walk, 2 = run, 3 = sprint (hold Shift = sprint) |
 | `PlayerListStyle` | `0` | Team list style: 0 normal, 1 compact |
 | `GPSSize` | `1` | GPS size: 0 small, 1 normal, 2 large |
 | `GPSZoom` | `0.15` | GPS zoom (small = close) |

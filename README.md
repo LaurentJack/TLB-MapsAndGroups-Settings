@@ -133,6 +133,7 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 | `SafeZoneRemoveZombies` | `1` | 1 = les zombies qui entrent dans une zone safe sont supprimés |
 | `SafeZoneRemoveAnimals` | `0` | 1 = les animaux qui entrent dans une zone safe sont supprimés |
 | `SafeZoneRemoveAI` | `0` | 1 = les IA (Expansion AI, AI Patrols...) qui entrent dans une zone safe sont supprimées ; 0 = elles restent mais ne font aucun dégât |
+| `AutorunEnabled` | `1` | 1 = les joueurs peuvent utiliser l'autorun : une touche (= par défaut, modifiable dans les contrôles) fait avancer le personnage seul |
 | `UnlimitedStamina` | `0` | Stamina illimitee : 0 = non (vanilla), 1 = partout, 2 = seulement en zone PvE |
 | `PvEBlockedDamageSources` | `Grenade_Base`, `ExplosivesBase`, `ClaymoreMine`, `LandMineTrap`, `TrapBase` | Explosifs et pièges dont les dégâts sont aussi bloqués en PvE (l'auteur est inconnu) |
 | `TerritoryEnabled` | `1` | 1 = active les règles de territoire autour des drapeaux |
@@ -313,6 +314,7 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 | `ShowZoneIndicator` | `1` | 1 = affiche l'indicateur PvE / PvP en haut de l'écran |
 | `ShowMapBuildings` | `1` | 1 = icônes des bâtiments (puits, commissariats...) sur la carte satellite |
 | `ShowMapRoads` | `1` | 1 = routes tracées sur la carte satellite |
+| `AutorunSpeed` | `2` | Vitesse de l'autorun : 1 = marche, 2 = course, 3 = sprint (Shift maintenu = sprint) |
 | `PlayerListStyle` | `0` | Style de la liste d'équipe : 0 normal, 1 compact |
 | `GPSSize` | `1` | Taille du GPS : 0 petit, 1 normal, 2 grand |
 | `GPSZoom` | `0.15` | Zoom du GPS (petit = proche) |
