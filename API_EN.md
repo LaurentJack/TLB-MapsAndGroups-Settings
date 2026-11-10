@@ -54,3 +54,19 @@ Icon: one of the mod's icon names (`flag`, `skull`, `box`, `heli`, `crosshair`â€
 `GetPlayersGroupId` (-1 without a group), `AreInSameGroup(a, b)`, `GetGroupMembers` (list of Steam IDs).
 
 API markers are removed when the server restarts: the event mod must create them again.
+
+## Compatibility pack (`TLB_MapsAndGroups_Compat.pbo`)
+
+For event mods that do not use this API yet, the mod ships a second PBO that provides the marker classes of two
+other maps and sends their markers to ours:
+
+- **"LBmaster" API** (mods checking `LBGROUP_SYSTEM_NEW`): `LBStaticMarkerManager.Get().AddTempServerMarker`,
+  `RemoveServerMarker`, `LBServerMarker.SetRadius`, `LBGroupManager.Get().GetPlayersGroup`.
+- **"BasicMap" API** (mods checking `BASICMAP`): `BasicMap().SetMarkers` / `SetMarkersRemote`, `BasicMapMarker`,
+  `BasicMapCircleMarker`.
+
+Tested with DevCA King of the Hill. The pack does not declare `LBmaster_Groups` (some mods use it to modify
+LBmaster's menus). If the server runs the real LBmaster Groups or BasicMap, delete `TLB_MapsAndGroups_Compat.pbo`
+and its `.bisign`.
+
+The mod also declares `TLB_MAPSANDGROUPS_COMPAT` when the pack is loaded.
