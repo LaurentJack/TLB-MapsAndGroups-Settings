@@ -39,7 +39,7 @@ default values below, then rewritten on every start to add new settings.
 
 | Setting | Default | Explanation |
 |---|---|---|
-| `ConfigVersion` | `7` | File format version, managed by the mod: do not edit |
+| `ConfigVersion` | `8` | File format version, managed by the mod: do not edit |
 | `ConfigCommentsLanguage` | `"auto"` | Language of these comments: "fr", "en", "auto" (server language) or "" (no comments) |
 | `GroupNameMinLength` | `3` | Minimum number of characters in a group name |
 | `GroupNameMaxLength` | `24` | Maximum number of characters in a group name |

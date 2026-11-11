@@ -39,7 +39,7 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 
 | Réglage | Par défaut | Explication |
 |---|---|---|
-| `ConfigVersion` | `7` | Version du format de ce fichier, gérée par le mod : ne pas modifier |
+| `ConfigVersion` | `8` | Version du format de ce fichier, gérée par le mod : ne pas modifier |
 | `ConfigCommentsLanguage` | `"auto"` | Langue de ces commentaires : "fr", "en", "auto" (langue du serveur) ou "" (aucun commentaire) |
 | `GroupNameMinLength` | `3` | Nombre minimum de caractères du nom de groupe |
 | `GroupNameMaxLength` | `24` | Nombre maximum de caractères du nom de groupe |
