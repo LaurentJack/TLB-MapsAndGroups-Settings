@@ -27,7 +27,6 @@ default values below, then rewritten on every start to add new settings.
 - [`NoBuildZones.json`](#nobuildzones): No build, PvE and PvP zones. Easier to edit in game (menu, Zones tab).
 - [`ServerMarkers.json`](#servermarkers): Permanent markers visible to everyone (also editable in game by admins).
 - [`Webhooks.json`](#webhooks): Sending events to Discord.
-- [`ClanClothing.json`](#clanclothing): Clothing with group-specific textures.
 - [`Groups.json`](#groups): Server groups (data managed by the mod; edit with the server stopped).
 - [`ClientSettings.json`](#clientsettings): The player's own settings (also editable in the menu, Settings tab).
 
@@ -229,19 +228,6 @@ default values below, then rewritten on every start to add new settings.
 | `MarkerCreated` | `""` | Webhook: server marker created |
 | `DisabledEvents` | `[]` | Events never sent (e.g. "GlobalChat") |
 
-### ClanClothing
-
-`ClanClothing.json` — Clothing with group-specific textures.
-
-| Setting | Default | Explanation |
-|---|---|---|
-| `Enabled` | `0` | 1 = enable clan clothing (group-specific textures) |
-| `Sets` | _list_ | One block per group |
-| `Sets[].GroupTag` | `"TAG"` | Tag of the group |
-| `Sets[].Items` | _list_ | Retextured clothes for this group |
-| `Sets[].Items[].ClassName` | `"TShirt_White"` | Clothing class |
-| `Sets[].Items[].Textures` | `MyClanMod/data/tshirt_tag_co.paa` | One texture per hiddenSelection, in order (empty = unchanged) |
-
 ### Groups
 
 `Groups.json` — Server groups (data managed by the mod; edit with the server stopped).
@@ -308,7 +294,6 @@ default values below, then rewritten on every start to add new settings.
 | `ShowCompass` | `1` | 1 = show the compass (key H) |
 | `ShowGPS` | `1` | 1 = show the GPS (key B) |
 | `ShowTagInChat` | `1` | 1 = show group tags in chat |
-| `UseClanTextures` | `1` | 1 = show clan clothing |
 | `StreamerMode` | `0` | 1 = hide names and coordinates |
 | `ShowNoBuildZones` | `1` | 1 = show zones on the map |
 | `ShowSatellite` | `1` | 1 = satellite map; 0 = vanilla map |

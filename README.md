@@ -27,7 +27,6 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 - [`NoBuildZones.json`](#nobuildzones) : Zones de construction interdite, PvE et PvP. Plus simple à modifier en jeu (menu, onglet Zones).
 - [`ServerMarkers.json`](#servermarkers) : Marqueurs permanents visibles par tous (aussi modifiables en jeu par les admins).
 - [`Webhooks.json`](#webhooks) : Envoi des événements vers Discord.
-- [`ClanClothing.json`](#clanclothing) : Vêtements aux textures propres à un groupe.
 - [`Groups.json`](#groups) : Les groupes du serveur (données gérées par le mod ; à modifier serveur arrêté).
 - [`ClientSettings.json`](#clientsettings) : Réglages personnels du joueur (aussi modifiables dans le menu, onglet Réglages).
 
@@ -229,19 +228,6 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 | `MarkerCreated` | `""` | Webhook : création d'un marqueur serveur |
 | `DisabledEvents` | `[]` (vide) | Événements à ne jamais envoyer (ex. "GlobalChat") |
 
-### ClanClothing
-
-`ClanClothing.json` — Vêtements aux textures propres à un groupe.
-
-| Réglage | Par défaut | Explication |
-|---|---|---|
-| `Enabled` | `0` | 1 = active les vêtements de clan (textures propres à un groupe) |
-| `Sets` | _liste_ | Un bloc par groupe |
-| `Sets[].GroupTag` | `"TAG"` | Tag du groupe concerné |
-| `Sets[].Items` | _liste_ | Vêtements retexturés pour ce groupe |
-| `Sets[].Items[].ClassName` | `"TShirt_White"` | Classe du vêtement |
-| `Sets[].Items[].Textures` | `MyClanMod/data/tshirt_tag_co.paa` | Une texture par hiddenSelection, dans l'ordre (vide = inchangée) |
-
 ### Groups
 
 `Groups.json` — Les groupes du serveur (données gérées par le mod ; à modifier serveur arrêté).
@@ -308,7 +294,6 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 | `ShowCompass` | `1` | 1 = affiche la boussole (touche H) |
 | `ShowGPS` | `1` | 1 = affiche le GPS (touche B) |
 | `ShowTagInChat` | `1` | 1 = affiche les tags de groupe dans le chat |
-| `UseClanTextures` | `1` | 1 = affiche les vêtements de clan |
 | `StreamerMode` | `0` | 1 = masque les noms et les coordonnées |
 | `ShowNoBuildZones` | `1` | 1 = affiche les zones sur la carte |
 | `ShowSatellite` | `1` | 1 = carte satellite ; 0 = carte vanilla |
