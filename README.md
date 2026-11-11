@@ -135,7 +135,7 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 | `SafeZoneRemoveAnimals` | `0` | 1 = les animaux qui entrent dans une zone safe sont supprimés |
 | `SafeZoneRemoveAI` | `0` | 1 = les IA (Expansion AI, AI Patrols...) qui entrent dans une zone safe sont supprimées ; 0 = elles restent mais ne font aucun dégât |
 | `AutorunEnabled` | `1` | 1 = les joueurs peuvent utiliser l'autorun : une touche (= par défaut, modifiable dans les contrôles) fait avancer le personnage seul |
-| `UnlimitedStamina` | `0` | Stamina illimitee : 0 = non (vanilla), 1 = partout, 2 = seulement en zone PvE |
+| `UnlimitedStamina` | `0` | Stamina illimitee : 0 = non (vanilla), 1 = partout, 2 = seulement en zone PvE. La barre reste pleine quel que soit le poids porte |
 | `PvEBlockedDamageSources` | `Grenade_Base`, `ExplosivesBase`, `ClaymoreMine`, `LandMineTrap`, `TrapBase` | Explosifs et pièges dont les dégâts sont aussi bloqués en PvE (l'auteur est inconnu) |
 | `TerritoryEnabled` | `1` | 1 = active les règles de territoire autour des drapeaux |
 | `TerritoryRadius` | `60.0` | Rayon du territoire autour d'un drapeau, en mètres |

@@ -135,7 +135,7 @@ default values below, then rewritten on every start to add new settings.
 | `SafeZoneRemoveAnimals` | `0` | 1 = animals entering a safe zone are removed |
 | `SafeZoneRemoveAI` | `0` | 1 = AI (Expansion AI, AI Patrols...) entering a safe zone are removed; 0 = they stay but deal no damage |
 | `AutorunEnabled` | `1` | 1 = players can use autorun: a key (= by default, can be changed in the controls) makes the character move on its own |
-| `UnlimitedStamina` | `0` | Unlimited stamina: 0 = off (vanilla), 1 = everywhere, 2 = only in PvE zones |
+| `UnlimitedStamina` | `0` | Unlimited stamina: 0 = off (vanilla), 1 = everywhere, 2 = only in PvE zones. The bar stays full whatever the carried weight |
 | `PvEBlockedDamageSources` | `Grenade_Base`, `ExplosivesBase`, `ClaymoreMine`, `LandMineTrap`, `TrapBase` | Explosives and traps whose damage is also blocked in PvE (the owner is unknown) |
 | `TerritoryEnabled` | `1` | 1 = enable territory rules around flags |
 | `TerritoryRadius` | `60.0` | Territory radius around a flag, in meters |
