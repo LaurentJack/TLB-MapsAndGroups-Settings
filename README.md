@@ -112,7 +112,7 @@ démarrage avec les valeurs par défaut ci-dessous, puis réécrits à chaque d�
 | `ChatRoles[].Highlight` | `1` | 1 = message mis en évidence par un fond |
 | `ChatRoles[].SteamIds` | `[]` (vide) | SteamID64 des joueurs qui ont ce rôle |
 | `EventMarkersEnabled` | `1` | 1 = affiche automatiquement les événements (airdrops, épaves...) sur la carte |
-| `AutoDetectEvents` | `1` | Au démarrage, lit db/events.xml (et les fichiers d'événements des mods déclarés dans cfgeconomycore.xml) et ajoute à EventMarkers les objets des événements actifs. Crashs, largages, KOTH… sont affichés ; les autres sont ajoutés désactivés. Ce qui est déjà dans la liste n'est jamais modifié |
+| `AutoDetectEvents` | `1` | Au démarrage, lit db/events.xml (et les fichiers d'événements des mods déclarés dans cfgeconomycore.xml) et ajoute à EventMarkers les objets des événements actifs. Crashs, largages, KOTH… sont affichés ; les autres sont ajoutés désactivés. Ce qui est déjà dans la liste n'est jamais modifié. Utilise le lecteur XML de Community Framework s'il est chargé |
 | `ImportExpansionMarkers` | `1` | 1 = recopie les marqueurs d'événements du mod Expansion s'il est chargé |
 | `ImportExpansionStaticMarkers` | `0` | 1 = recopie aussi les marqueurs fixes d'Expansion (traders...) |
 | `ExpansionEventPvPRadius` | `200.0` | Rayon (m) de la zone PvP autour des événements Expansion importés (0 = pas de zone) |

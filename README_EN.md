@@ -112,7 +112,7 @@ default values below, then rewritten on every start to add new settings.
 | `ChatRoles[].Highlight` | `1` | 1 = message highlighted with a background |
 | `ChatRoles[].SteamIds` | `[]` | SteamID64 of the players with this role |
 | `EventMarkersEnabled` | `1` | 1 = automatically show events (airdrops, crashes...) on the map |
-| `AutoDetectEvents` | `1` | At startup, reads db/events.xml (and the event files of mods listed in cfgeconomycore.xml) and adds the objects of active events to EventMarkers. Crashes, drops, KOTH… are shown; others are added disabled. Entries already in the list are never changed |
+| `AutoDetectEvents` | `1` | At startup, reads db/events.xml (and the event files of mods listed in cfgeconomycore.xml) and adds the objects of active events to EventMarkers. Crashes, drops, KOTH… are shown; others are added disabled. Entries already in the list are never changed. Uses the Community Framework XML reader when CF is loaded |
 | `ImportExpansionMarkers` | `1` | 1 = copy event markers from the Expansion mod if loaded |
 | `ImportExpansionStaticMarkers` | `0` | 1 = also copy Expansion static markers (traders...) |
 | `ExpansionEventPvPRadius` | `200.0` | Radius (m) of the PvP zone around imported Expansion events (0 = no zone) |
